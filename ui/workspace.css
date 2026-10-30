@@ -1,0 +1,156 @@
+/* Chapter editing and the per-book audio shelf share the existing glass tokens. */
+.reader-toolbar{flex-wrap:wrap;padding:16px 0 12px;gap:7px}
+.reader-toolbar .spacer{min-width:0}
+.reader-toolbar>.secondary{font-size:10px;padding:7px 10px}
+.voice-settings{max-width:46%}.voice-settings select{max-width:180px}
+.book-tabs{display:flex;gap:22px;flex-shrink:0;border-bottom:1px solid var(--line);margin:0 0 14px;min-height:39px}
+.book-tabs>button{border-radius:0;padding:8px 1px;color:var(--muted);font-size:12px;border-bottom:2px solid transparent}
+.book-tabs>button[aria-selected=true]{color:var(--ink);border-bottom-color:var(--accent);font-weight:600}
+#takeCount{font-size:10px;background:var(--hover);border:1px solid var(--line);padding:1px 6px;border-radius:5px;font-variant-numeric:tabular-nums}
+#contentWorkspace{display:flex;flex-direction:column;flex:1;min-height:0}
+.reading-area{gap:17px}.chapter-panel{width:178px;padding-top:9px}
+.chapter-item{padding:11px 10px;margin-bottom:5px;min-height:64px}
+.chapter-item>strong{font-size:11px;font-weight:550;line-height:1.5;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-wrap:pretty}
+.chapter-item small{font-size:9px;line-height:1.5}.chapter-item.active{box-shadow:inset 0 1px 0 var(--edge)}
+.chapter-item small::before{display:none}
+.document{padding:18px 21px 12px;border-color:var(--line);box-shadow:inset 0 1px 0 var(--edge)}
+.section-label{padding-bottom:13px;align-items:baseline;gap:13px}.section-label>strong{font-size:11px;font-weight:550;max-width:64%;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}.section-label>span{font-size:9px;white-space:nowrap}
+#editor{font-size:16px;line-height:1.85;min-height:85px;padding-bottom:16px}
+.edit-footer{display:block;padding-top:8px}.edit-footer>span{display:block;font-size:9px;min-height:15px;margin-bottom:5px}.edit-actions{display:flex;flex-wrap:wrap;align-items:center;gap:3px;justify-content:flex-end}
+.edit-actions .text{font-size:9px;padding:5px;min-height:29px}.edit-actions .secondary{font-size:10px;padding:7px 9px;min-height:31px}.edit-actions .primary{font-size:10px;padding:7px 10px;min-height:32px;border-radius:9px;margin-left:3px}
+.generation{padding-left:195px;min-height:35px;font-size:9px}
+/* Progress lives with generation controls; the player keeps its own space. */
+#reader{overflow-y:auto;scrollbar-width:thin;padding-bottom:12px}
+.reading-area{min-height:250px}
+.generation-status{flex-shrink:0;border:1px solid var(--line);border-radius:12px;padding:11px 14px;margin:0 0 14px;background:var(--sheet);color:var(--ink)}
+.generation-heading{display:flex;align-items:center;gap:12px;flex-wrap:wrap;min-height:26px}
+.generation-heading strong{font-size:12px;font-weight:600;flex:1}
+#generationCount{font-size:11px;color:var(--muted);font-variant-numeric:tabular-nums}
+.generation-heading button{min-height:28px;padding:4px 7px;font-size:11px;color:var(--accent)}
+#generationProgress{display:block;width:100%;height:6px;margin:6px 0 0;appearance:none;border:0;border-radius:6px;overflow:hidden;background:var(--line);accent-color:var(--accent)}
+#generationProgress::-webkit-progress-bar{background:var(--line);border-radius:6px}
+#generationProgress::-webkit-progress-value{background:var(--accent);border-radius:6px}
+#generationDetail{font-size:10px;color:var(--muted);line-height:1.5;margin:6px 0 0;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}
+.generation-status[data-phase=error]{border-color:var(--warning)}
+/* Short notices no longer cover the document footer or transport. */
+#toast{top:68px;bottom:auto;left:auto;right:28px;max-width:min(420px,calc(100% - 56px));padding:10px 14px;font-size:11px;box-shadow:0 4px 16px var(--shadow)}
+.audiobooks-panel{min-height:0;flex:1;overflow:auto;padding:8px 4px 25px;scrollbar-width:thin}
+.audio-library-heading{display:flex;justify-content:space-between;align-items:start;gap:25px}.audio-library-heading h2{font-size:19px;letter-spacing:-.4px;font-weight:600;margin:0 0 8px}.audio-library-heading p{font-size:11px;line-height:1.6;color:var(--muted);margin:0;max-width:430px}.audio-library-heading label{color:var(--muted);font-size:10px;white-space:nowrap}.audio-library-heading select{display:block;background:var(--sheet);color:var(--ink);border:1px solid var(--line);border-radius:7px;font-size:11px;padding:7px 10px;margin-top:5px;min-width:94px}
+.take-row{display:flex;align-items:center;gap:18px;padding:19px 0;border-bottom:1px solid var(--line)}.take-copy{flex:1;min-width:0}.take-copy h3{font-size:13px;font-weight:550;line-height:1.5;margin:0;overflow-wrap:anywhere}.take-copy p{margin:5px 0 4px;font-size:10px;color:var(--muted)}.take-copy small{font-size:9px;color:var(--quiet);font-variant-numeric:tabular-nums}.take-status{display:inline-block;font-size:9px;color:var(--accent);margin-left:9px}.take-actions{display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end;max-width:46%}.take-actions>.secondary{font-size:10px;min-height:32px;padding:6px 9px}.take-actions>.text{max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:9px}.takes-empty{color:var(--muted);text-align:center;font-size:12px;line-height:1.8;padding:45px 30px}
+.voices-panel{position:absolute;top:95px;right:28px;bottom:124px;width:min(570px,calc(100% - 55px));border-radius:20px;padding:20px 23px;z-index:7;display:flex;flex-direction:column;background:var(--glass-strong)}
+.voices-panel .production-heading{align-items:flex-start;gap:20px;flex-shrink:0}.voices-panel h2{font-size:17px;letter-spacing:-.3px;margin:0}.voices-panel .production-heading .panel-hint{margin:7px 0 10px}.voices-panel>.panel-hint{margin:13px 0 0;flex-shrink:0;font-size:10px}
+#voiceDemoList{min-height:0;flex:1;overflow:auto;scrollbar-width:thin}.voice-demo-row{display:flex;align-items:center;gap:9px;padding:12px 0;border-bottom:1px solid var(--line)}.voice-demo-row>div{flex:1;min-width:0}.voice-demo-row strong{font-size:12px;font-weight:550}.voice-demo-row small{display:block;font-size:9px;line-height:1.5;margin-top:4px;color:var(--muted)}.voice-demo-row>.secondary{font-size:10px;min-height:32px;padding:6px 11px}.voice-demo-row>.text{min-width:68px;font-size:10px}
+@media(max-width:1080px){.chapter-panel{width:145px}.generation{padding-left:162px}.reader-toolbar .voice-settings{max-width:44%}.voice-settings select{max-width:145px}.edit-actions{justify-content:flex-start}.edit-footer>span{display:block}.document{padding:16px 16px 10px}.voices-panel{right:22px}.reader-toolbar>.secondary{font-size:9px}}
+@media(max-width:920px){.chapter-panel{width:127px}.generation{padding-left:144px}.reader-toolbar .spacer{display:none}.voice-settings select{max-width:130px}.reader-toolbar .voice-settings{max-width:100%}.reading-area{gap:12px}.section-label{flex-wrap:wrap;gap:4px}.section-label>strong{max-width:100%}.take-row{align-items:flex-start}.take-actions{flex-direction:column;max-width:40%}.edit-actions .primary{margin-left:0}}
+@media(max-height:730px){.reader-toolbar{padding-top:10px;padding-bottom:7px}.book-tabs{margin-bottom:10px;min-height:34px}.document{padding-top:14px}#editor{min-height:55px}.edit-footer>span{margin-bottom:2px}.generation{min-height:29px}.section-label{padding-bottom:10px}}
+
+/* Listening tools stay with playback; the document toolbar is for creating speech. */
+.reader-toolbar .voice-settings{max-width:none}
+.import-options .ocr-option{align-items:flex-start;line-height:1.6}
+.ocr-option input{flex-shrink:0;margin-top:3px}
+#ocrHelp{line-height:1.7}
+.player-tools{display:flex;align-items:center;gap:5px;flex-shrink:0;border-left:1px solid var(--line);padding-left:13px}
+.player-speed{display:flex;align-items:center;gap:3px;min-height:38px;padding-left:7px;border:1px solid var(--line);border-radius:10px;background:var(--sheet);color:var(--ink)}
+.player-speed>svg{width:15px;height:15px;color:var(--muted)}
+.player-speed select{font:inherit;font-size:12px;font-weight:550;font-variant-numeric:tabular-nums;min-height:36px;width:74px;border:0;padding:4px 5px;background:transparent;color:var(--ink);cursor:pointer;border-radius:9px}
+.player-tool{display:flex;flex-direction:column;justify-content:center;gap:3px;min-width:54px;min-height:48px;padding:5px 7px;font-size:9px;line-height:1.3;color:var(--muted);white-space:nowrap}
+#player #musicButton{width:auto;flex-shrink:0}
+#player #musicButton span{display:inline}
+.player-tool>svg,#player #musicButton svg{width:19px;height:19px}
+.player-tool:hover,.player-tool[aria-expanded=true]{color:var(--accent);background:var(--hover)}
+footer#player{gap:13px}
+.timeline{min-width:130px}
+.production-panel{top:180px;bottom:auto;max-height:calc(100dvh - 206px)}
+@media(max-width:1080px){
+ footer#player{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:9px 14px;padding:11px 15px;min-height:112px}
+ #player .player-art{display:none}
+ .transport{grid-column:1;grid-row:1}
+ .timeline{grid-column:2 / 4;grid-row:1;min-width:0}
+ .player-position{grid-column:1;grid-row:2;border-left:0;padding-left:0;flex-direction:row;justify-content:center;gap:5px}
+ .player-tools{grid-column:2 / 4;grid-row:2;justify-self:end;border-left:0;padding-left:0}
+ .player-tool{flex-direction:row;gap:6px;min-height:36px;font-size:10px;padding:6px 9px}
+ .player-tool>svg,#player #musicButton svg{width:17px;height:17px}
+ .production-panel{top:180px;bottom:auto;max-height:calc(100dvh - 206px)}
+ #toast{bottom:auto}
+ .voices-panel{bottom:154px}
+}
+@media(max-height:730px){
+ #contentWorkspace{overflow-y:auto;scrollbar-width:thin}
+ #contentWorkspace .reading-area{flex:1 1 auto;min-height:190px}
+ .import-options{max-height:160px;overflow-y:auto;flex-shrink:0;scrollbar-width:thin}
+ .library-foot{flex-shrink:0}
+}
+
+/* Per-book Pro uses the same readable document/control palette. */
+.book-cloud-dialog{width:min(680px,calc(100vw - 48px));max-height:calc(100vh - 64px);overflow:auto;padding:28px;box-sizing:border-box}
+.book-cloud-dialog h2{font-size:27px;line-height:1.2;margin:4px 0 12px}.book-cloud-dialog p{line-height:1.55}
+.book-cloud-summary{display:grid;grid-template-columns:1fr auto;gap:8px 20px;padding:18px 0;margin:12px 0;border-block:1px solid var(--line,#87958c)}
+#bookCloudEstimate{grid-column:1/-1;font-size:13px}.book-cloud-summary strong{overflow-wrap:anywhere}
+.book-cloud-dialog label{display:flex;flex-direction:column;gap:8px}.book-cloud-dialog select{min-height:40px}
+.book-cloud-sample{margin:18px 0}.book-cloud-sample p{display:flex;flex-wrap:wrap;justify-content:space-between;gap:6px}.book-cloud-sample span,.book-cloud-sample small{font-size:12px}
+.book-cloud-sample blockquote{margin:12px 0;padding:14px 16px;background:var(--document-bg,rgba(127,127,127,.10));border-left:2px solid currentColor;max-height:116px;overflow:auto;font-size:14px;line-height:1.6;white-space:pre-wrap}
+.book-cloud-dialog .book-cloud-consent{flex-direction:row;align-items:flex-start;font-size:13px;line-height:1.5;margin:16px 0}.book-cloud-consent input{flex:none;margin-top:4px}
+.book-cloud-payment{display:grid;grid-template-columns:172px 1fr;gap:20px;margin:22px 0;padding:18px 0;border-block:1px solid var(--line,#87958c)}
+#bookCloudQR svg{display:block;width:172px;height:172px;background:#fff;fill:#000}#bookCloudPayAmount{font-size:28px}#bookCloudPayCode{display:block;overflow-wrap:anywhere;font-size:12px}
+.book-cloud-payment small{display:block;font-size:12px;line-height:1.5}.book-cloud-pricing{margin-top:18px}.book-cloud-pricing summary{cursor:pointer;padding:10px 0}.book-cloud-pricing table{width:100%;border-collapse:collapse;font-size:13px}.book-cloud-pricing th,.book-cloud-pricing td{padding:10px 4px;text-align:left;border-bottom:1px solid var(--line,#87958c)}.book-cloud-pricing p{font-size:12px}
+.book-cloud-links{display:flex;flex-wrap:wrap;gap:8px 24px}#bookCloudStatus{min-height:24px}#bookCloudOrderId{overflow-wrap:anywhere;font-size:11px}
+.cloud-scope>label,.cloud-scope>.range-fields,.cloud-scope>.chapter-tools{display:none!important}
+.book-cloud-dialog .license-actions{display:flex;flex-wrap:wrap;gap:10px}.book-cloud-dialog button{min-height:40px}
+@media(max-width:600px){.book-cloud-dialog{padding:20px;width:calc(100vw - 24px)}.book-cloud-summary{grid-template-columns:1fr}.book-cloud-payment{grid-template-columns:1fr}.book-cloud-dialog .license-actions button{width:100%}}
+@media(prefers-contrast:more){.book-cloud-dialog blockquote{border:1px solid currentColor}.book-cloud-dialog small{opacity:1}}
+#bookCloudQR svg,#bookCloudQR path{stroke:none;fill:#000;shape-rendering:crispEdges}
+.book-cloud-dialog .production-heading{position:sticky;top:-28px;z-index:2;background:inherit;padding-top:4px}
+#licensePanel{color:var(--ink);background:#f7f9fc}
+[data-theme=dark] #licensePanel{background:#202a39}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]) #licensePanel{background:#202a39}}
+.book-cloud-dialog{scroll-padding-top:100px}
+
+/* Processing changes content in place; progress ticks never replay entrances. */
+.processing-status{flex-shrink:0;margin:12px 0;padding:14px 17px;border:1px solid var(--line);border-radius:14px;background:var(--sheet);color:var(--ink)}
+.processing-heading{display:flex;align-items:center;gap:12px;font-size:13px}.processing-heading strong{flex:1}.processing-heading>span{font-variant-numeric:tabular-nums;color:var(--muted);font-size:12px}
+.processing-status progress{display:block;width:100%;height:7px;margin:11px 0 10px;accent-color:var(--accent)}
+.processing-steps{display:flex;flex-wrap:wrap;gap:8px 24px;color:var(--muted);font-size:11px}.processing-steps [aria-current=step]{color:var(--accent);font-weight:650}
+.processing-status p{font-size:11px;line-height:1.6;color:var(--muted);margin:9px 0 0}
+@media(prefers-reduced-motion:reduce){.processing-status progress{animation:none;transition:none}}
+
+/* Pro keeps the current action readable; technical and old-order details stay folded. */
+#bookCloudDialog{font-size:15px;font-weight:400;line-height:1.5}
+#bookCloudDialog .production-heading{position:static;padding:0;margin-bottom:16px}
+#bookCloudDialog .production-heading h2{font-size:26px;line-height:1.25;letter-spacing:-.5px;margin:0;font-weight:700}
+#bookCloudDialog .eyebrow{font-size:12px;font-weight:600;margin-bottom:6px}
+#bookCloudDialog p,#bookCloudDialog label,#bookCloudDialog select,#bookCloudDialog button,#bookCloudDialog summary{font-size:15px}
+#bookCloudDialog button{min-height:44px}
+#bookCloudDialog select{font-weight:400;max-width:100%;min-height:44px}
+#bookCloudDialog .panel-hint,#bookCloudDialog small,#bookCloudEstimate,#bookCloudQuota{font-size:14px;line-height:1.55;font-weight:400}
+#bookCloudDialog #bookCloudConfirmText{font-size:17px;line-height:1.5;font-weight:500;overflow-wrap:anywhere;margin:0 0 8px}
+#bookCloudDialog #bookCloudConfirmLimit{color:var(--muted);margin:0 0 16px;font-variant-numeric:tabular-nums}
+#bookCloudTrialSummary .pro-trial-choices{gap:8px;margin-bottom:18px}
+#bookCloudTrialSummary .pro-trial-choices label{font-size:14px;padding:10px;border:1px solid var(--line);border-radius:10px;line-height:1.4;font-weight:500;align-items:center}
+#bookCloudTrialSummary .pro-trial-choices label:has(input:checked){border-color:var(--accent);background:var(--hover)}
+#bookCloudTrialSummary .pro-trial-choices input{width:16px;height:16px}
+#bookCloudDialog .book-cloud-progress{padding:16px;margin:8px 0 16px;border-radius:12px;max-height:32vh;overflow-y:auto}
+#bookCloudDialog .book-cloud-progress h3{font-size:18px;line-height:1.35;margin:0 0 8px;font-weight:650}
+#bookCloudDialog .book-cloud-progress p{font-size:15px;line-height:1.55}
+#bookCloudDialog .book-cloud-progress small{font-size:14px;margin-top:10px}
+#bookCloudDialog .book-cloud-progress progress{height:7px;margin-top:14px}
+#bookCloudDialog #bookCloudHistoryWrap{border-top:1px solid var(--line);padding-top:4px;margin:0}
+#bookCloudDialog #bookCloudHistoryWrap summary,#bookCloudDialog #bookCloudOrderDetails summary{padding:10px 0;cursor:pointer;color:var(--muted);font-weight:500}
+#bookCloudDialog #bookCloudHistoryWrap label{padding:0 0 12px}
+#bookCloudDialog .book-cloud-links{gap:8px;margin-top:4px}
+#bookCloudDialog .book-cloud-links:has(button:not([hidden])){padding-top:4px}
+#bookCloudDialog .book-cloud-footer .license-actions{gap:10px}
+#bookCloudDialog.is-trial-confirmation .license-actions>button{flex:1}
+#bookCloudDialog.has-order:not(.is-payment) .book-cloud-scroll>:not(#bookCloudHistoryWrap):not(#bookCloudOrderDetails):not(.book-cloud-links){display:none!important}
+#bookCloudDialog.has-order #bookCloudBuy{display:none!important}
+#bookCloudDialog #bookCloudOrderId{font-size:13px;user-select:text}
+#bookCloudDialog .book-cloud-summary{margin-top:0}
+#bookCloudDialog .book-cloud-consent{font-size:14px}
+#bookCloudDialog .book-cloud-sample blockquote{max-height:88px}
+.audio-library-heading{align-items:center;margin-bottom:20px}
+.audio-library-heading h2{margin:0;font-size:22px}
+.audio-library-heading label{font-size:14px}
+.audio-library-heading select{font-size:14px;min-height:40px}
+@media(prefers-contrast:more){#bookCloudDialog .panel-hint,#bookCloudDialog small,#bookCloudDialog summary{color:var(--ink)}}
+:root[data-contrast=more] #bookCloudDialog .panel-hint,:root[data-contrast=more] #bookCloudDialog small,:root[data-contrast=more] #bookCloudDialog summary{color:var(--ink)}
+@media(max-height:650px){#bookCloudDialog.is-trial-confirmation{padding:20px}#bookCloudDialog .book-cloud-progress{padding:12px;margin-block:4px 12px}#bookCloudDialog .production-heading{margin-bottom:12px}}
+#bookCloudDialog{font-family:-apple-system,BlinkMacSystemFont,sans-serif}

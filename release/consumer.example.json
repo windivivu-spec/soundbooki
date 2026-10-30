@@ -1,0 +1,11 @@
+{
+  "channel": "consumer",
+  "licenseMode": "device",
+  "licensePublicKey": "REPLACE_WITH_ED25519_RAW_PUBLIC_KEY_BASE64",
+  "checkoutURL": "",
+  "licenseBaseURL": "",
+  "priceVND": 189000,
+  "period": "year",
+  "privateVoiceAvailable": false,
+  "creditsBaseURL": ""
+}

@@ -1,0 +1,25 @@
+.tooling/
+.gradle/
+**/build/
+local.properties
+app/src/main/assets/nano/*.onnx
+app/src/main/assets/nano/sea_g2p.bin
+app/src/main/jniLibs/
+vendor/sea-g2p.tar.gz
+vendor/sea-g2p/target/
+qa/*.jar
+qa/*.wav
+qa/classes/
+qa/*.dylib
+qa/*.png
+qa/*.json
+qa/*.xml
+qa/*.log
+
+vendor/sea-g2p/python/sea_g2p/sea_g2p.bin
+qa/native-libs/
+qa/screens/
+# Owner-local Pro demos are staged by the build, never committed.
+/app/src/main/assets/voice-previews/
+/app/src/debug/assets/voice-previews/
+/app/src/debug/assets/welcome/welcome.wav

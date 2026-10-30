@@ -1,0 +1,13 @@
+project_id = "windi-sach-noi"
+
+[functions.wsn-sepay-webhook]
+verify_jwt = false
+
+[functions.wsn-license]
+verify_jwt = false
+
+[functions.wsn-books]
+verify_jwt = false
+
+[functions.wsn-heygen-worker]
+verify_jwt = false

@@ -1,0 +1,21 @@
+/* Layout refinements retain the app's original colors, fonts and glass controls. */
+.library-heading,.search-field input,.book-item strong,.book-item small,.app-info-button{font-size:13px}
+.search-field{height:42px}.home-navigation,.library>.primary{min-height:44px;font-size:14px}
+.window-toolbar .icon{width:40px;min-height:40px}.breadcrumb,.window-toolbar .text{font-size:13px}
+.empty-description{font-size:14px}.empty-formats{font-size:12px}.empty>.primary{min-height:48px;font-size:14px}
+.launch-banner{min-height:116px;padding:10px 52px 10px 24px}.launch-banner-art{height:96px}.launch-banner h2{font-size:19px;margin:3px 0 5px}.launch-banner-price>strong{font-size:30px}
+.launch-banner #dismissLaunchBanner{position:absolute;z-index:2;right:8px;top:8px;width:40px;min-height:40px;padding:0;font-size:24px;line-height:1;color:var(--launch-ink);border-radius:50%}
+.book-heading h1{font-size:26px}#meta{font-size:12px}.book-heading>.secondary{font-size:13px;min-height:40px}
+.reader-view-switch{margin:14px 0}.reader-view-switch button{min-height:52px}.reader-view-switch strong{font-size:15px}
+.engine-row{font-size:13px;gap:8px}.engine-row select{font-size:13px;min-height:40px}.engine-row .text,.engine-row label{font-size:13px}
+.reader-toolbar{padding:10px 0 14px}.reader-toolbar .secondary,.voice-settings,.reader-toolbar .primary{min-height:44px;font-size:13px}.voice-settings select{font-size:14px;min-height:35px}
+.book-tabs>button{font-size:14px;min-height:44px}.chapter-heading,.chapter-item>strong{font-size:13px}.chapter-item small{font-size:11px}
+.section-label>strong,.section-label>span{font-size:12px}#reader #editor{font-size:18px;line-height:1.7}.edit-footer>span,.edit-actions .text,.edit-actions .secondary,.edit-actions .primary{font-size:12px}.edit-actions button{min-height:38px}
+.timeline>div,.timeline strong,.player-position>span{font-size:13px}.timeline span,.player-position small,.player-tool{font-size:11px}.player-tool{min-height:44px}.player-speed select{font-size:13px}
+#contentWorkspace .reading-area{min-height:360px}
+.voice-extra{position:relative;font-size:13px}.voice-extra summary{cursor:pointer;padding:10px 8px;color:var(--accent);white-space:nowrap}.voice-extra-menu{position:absolute;z-index:10;top:calc(100% + 5px);right:0;width:max-content;max-width:min(300px,calc(100vw - 48px));padding:12px 15px;border-radius:14px;background:var(--glass-strong)}.voice-extra-menu label{display:flex;align-items:center;gap:8px;min-height:36px;line-height:1.5}.voice-extra-menu input{flex:none;width:17px;height:17px;accent-color:var(--accent)}.voice-extra-menu button{display:flex}
+@media(max-width:1080px){.reader-toolbar .secondary,.voice-settings select{font-size:13px}.edit-actions .text,.edit-actions .secondary,.edit-actions .primary{font-size:12px}}
+@media(max-height:730px){.reader-view-switch{margin:8px 0}.reader-view-switch button{min-height:48px}}
+.voice-extra-menu{background:#f7f9fc}
+:root[data-theme=dark] .voice-extra-menu{background:#293444}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]) .voice-extra-menu{background:#293444}}

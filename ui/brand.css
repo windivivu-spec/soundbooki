@@ -1,0 +1,23 @@
+/* The supplied mark and wordmark share one lockup in every app surface. */
+.launch-dialog h2,.payment-details h2,.payment-success h2,.cloud-dialog h2,.info-identity h2{font-family:var(--font-display);font-weight:900}
+.source-reflow,.ebook-flow,textarea{font-family:var(--font-reading),sans-serif;font-weight:300}
+.source-reflow strong,.source-reflow b,.ebook-flow strong,.ebook-flow b{font-weight:700}
+.brand-lockup{display:inline-flex;align-items:center;gap:10px;min-width:0;vertical-align:middle}
+.brand-lockup img{display:block;object-fit:contain;flex-shrink:0;border-radius:0;margin:0}
+.library{background-image:linear-gradient(180deg,rgba(70,142,249,.32) 0%,rgba(94,157,249,.18) 34%,rgba(126,181,255,0) 100%);background-repeat:no-repeat;background-size:100% 390px}
+.brand-lockup .brand-symbol{width:40px;height:42px}
+.brand-lockup .brand-wordmark{width:140px;height:auto;max-width:100%}
+.brand{gap:10px;padding:0 2px}
+.brand-copy{min-width:0}
+.brand .brand-wordmark{width:148px;height:auto;display:block;margin:0 0 8px}
+.brand .brand-tagline{font-size:10px;line-height:1.4;margin:0;color:var(--muted);display:block;white-space:nowrap}
+.payment-brand .brand-lockup,.tour-brand .brand-lockup{gap:9px}
+.payment-brand .brand-symbol,.tour-brand .brand-symbol{width:30px;height:32px}
+.payment-brand .brand-wordmark,.tour-brand .brand-wordmark{width:144px;height:auto}
+.info-identity .brand-lockup{display:flex;justify-content:center;gap:15px;margin:8px auto 16px}
+.info-identity .brand-symbol{width:68px;height:72px;margin:0;border-radius:0}
+.info-identity .brand-wordmark{width:236px;height:auto;margin:0;border-radius:0}
+@media(max-width:1080px){.brand{gap:8px}.brand .brand-symbol{width:34px;height:36px}.brand .brand-wordmark{width:132px}.brand .brand-tagline{font-size:9px}}
+@media(max-width:920px){.brand .brand-wordmark{width:121px}.brand .brand-tagline{font-size:8.5px}}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]) .library{background-image:none}}
+:root[data-theme=dark] .library{background-image:none}

@@ -1,0 +1,146 @@
+{
+  "schema": 1,
+  "model": "F5 private voices",
+  "revision": "local-voice002-voice003-voice004-voice006-voice007-voice008-fp16-v3",
+  "sdkRevision": "2f866649b779881af8bd644e76b9a6d95053da29",
+  "vocoderRevision": "0feb3fdd929bcd6649e0e7c5a688cf7dd012ef21",
+  "license": "cc-by-nc-sa-4.0",
+  "files": [
+    {
+      "file": "vocos/config.yaml",
+      "size": 461,
+      "sha256": "da9033922f969a47f0c160010226919e59f27761fd5066f3828d46de6650b0fc"
+    },
+    {
+      "file": "vocos/pytorch_model.bin",
+      "size": 54365991,
+      "sha256": "97ec976ad1fd67a33ab2682d29c0ac7df85234fae875aefcc5fb215681a91b2a"
+    },
+    {
+      "file": "voices/voice-002/model.pt",
+      "size": 674347092,
+      "sha256": "13f986c2ad3e656cd4996fe935a525602a8f9d7ab5e1767a10cdd7fe766598c4"
+    },
+    {
+      "file": "voices/voice-002/vocab.txt",
+      "size": 11337,
+      "sha256": "031ab4b5cab593dfba597551159b7d6594f2cb6acf2fabf5897d56c3e695d2ea"
+    },
+    {
+      "file": "voices/voice-002/ref_audio.wav",
+      "size": 221612,
+      "sha256": "32fb7d356257616f6bb49e29a352e86f6199323f8eca1989d8e993ba4a6aaaad"
+    },
+    {
+      "file": "voices/voice-002/ref_text.txt",
+      "size": 100,
+      "sha256": "518ef747cf496b0331042274af9f91c6b2a16212106db749cefaf2a275dde915"
+    },
+    {
+      "file": "voices/voice-003/model.pt",
+      "size": 674347092,
+      "sha256": "7878400449815fa2c07f5b275f5d0c9457dbc8cd21c05a3dfe18677e13b43139"
+    },
+    {
+      "file": "voices/voice-003/vocab.txt",
+      "size": 11337,
+      "sha256": "031ab4b5cab593dfba597551159b7d6594f2cb6acf2fabf5897d56c3e695d2ea"
+    },
+    {
+      "file": "voices/voice-003/ref_audio.wav",
+      "size": 229004,
+      "sha256": "2912fafada5a4584115aab2ea48a9fbecd28e667e609ecc600812cce77ad8702"
+    },
+    {
+      "file": "voices/voice-003/ref_text.txt",
+      "size": 90,
+      "sha256": "2a25cc12594561fd5426d64934bf3256ef5f65612ca2cf1d036991514a00ea76"
+    },
+    {
+      "file": "voices/voice-004/model.pt",
+      "size": 674347092,
+      "sha256": "9651bcf1e486d3ad8bccbe5c0a166323f128ecbf80cf93f8c3e36c55a071487b"
+    },
+    {
+      "file": "voices/voice-004/vocab.txt",
+      "size": 11337,
+      "sha256": "031ab4b5cab593dfba597551159b7d6594f2cb6acf2fabf5897d56c3e695d2ea"
+    },
+    {
+      "file": "voices/voice-004/ref_audio.wav",
+      "size": 218252,
+      "sha256": "00f9243d617a6e9f9587cbc7f7c61cea990bf4559c2b013ee5d1e7cc74958e7f"
+    },
+    {
+      "file": "voices/voice-004/ref_text.txt",
+      "size": 89,
+      "sha256": "57e008a761ddef83a09ae4efe9c4a66e24c6f85fbe7d4f04f91559ce2d1e83c2"
+    },
+    {
+      "file": "voices/voice-006/model.pt",
+      "size": 674347092,
+      "sha256": "83d7f37ee60bb06622f72b01c8c245529a0120d98ef92c01dbf1dd5ae7e5f90e"
+    },
+    {
+      "file": "voices/voice-006/vocab.txt",
+      "size": 11337,
+      "sha256": "031ab4b5cab593dfba597551159b7d6594f2cb6acf2fabf5897d56c3e695d2ea"
+    },
+    {
+      "file": "voices/voice-006/ref_audio.wav",
+      "size": 227468,
+      "sha256": "5c444d7990d523873297cc4c20a9f473cd0be7e778904e1bc6cdb4b3677dfe19"
+    },
+    {
+      "file": "voices/voice-006/ref_text.txt",
+      "size": 108,
+      "sha256": "b82b48ae7b7404dd249fdc319e066249f0d5c574d32ea93057d78e8f1e2c56ba"
+    },
+    {
+      "file": "voices/voice-007/model.pt",
+      "size": 674347092,
+      "sha256": "5a3d155bee5e24635a2f93e57e2ee2b0cce71232eb3423d37a3391a5f2d2ef7b"
+    },
+    {
+      "file": "voices/voice-007/vocab.txt",
+      "size": 11337,
+      "sha256": "031ab4b5cab593dfba597551159b7d6594f2cb6acf2fabf5897d56c3e695d2ea"
+    },
+    {
+      "file": "voices/voice-007/ref_audio.wav",
+      "size": 219788,
+      "sha256": "ad0bb36d2539eb5b7ec3011719d6a6e3dc2fdcdd9fba957b3d1379bc27fd7a29"
+    },
+    {
+      "file": "voices/voice-007/ref_text.txt",
+      "size": 92,
+      "sha256": "ff3bec815690c228b10ad9c9f74fb42055ab8361d9d9244b49d2dc9644dde304"
+    },
+    {
+      "file": "voices/voice-008/model.pt",
+      "size": 674347092,
+      "sha256": "bc3360f85ad68c0249813b9ccca75d991f823b630134788bef8d8f658c48dfe4"
+    },
+    {
+      "file": "voices/voice-008/vocab.txt",
+      "size": 11337,
+      "sha256": "031ab4b5cab593dfba597551159b7d6594f2cb6acf2fabf5897d56c3e695d2ea"
+    },
+    {
+      "file": "voices/voice-008/ref_audio.wav",
+      "size": 224396,
+      "sha256": "5ece1ece3686a84f968a8fef22bde37669bae55ce2cfab07491ca823ac05d0b2"
+    },
+    {
+      "file": "voices/voice-008/ref_text.txt",
+      "size": 101,
+      "sha256": "cf9117a9b93c204ea2cd065dcb9c57e1f8ccc91d70cad1efd248011195147910"
+    }
+  ],
+  "excludedVoices": [
+    "voice-001",
+    "voice-005"
+  ],
+  "defaultVoice": "voice-002",
+  "inferenceRevision": "local-voice001-voice002-voice003-voice004-voice005-voice006-voice007-voice008-fp16-v2"
+}

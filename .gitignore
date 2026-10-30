@@ -1,0 +1,116 @@
+.runtime/
+.runtime-f5/
+training/f5/artifacts/
+.resources/
+.build/
+.qa/
+dist/
+__pycache__/
+*.pyc
+.DS_Store
+.library/
+.local-data/
+assets/music/demo-*.wav
+assets/music/demo-catalog.json
+assets/music/catalog.json
+output/
+training/piper/data/
+training/piper/runs/
+training/piper/checkpoints/
+commerce/.env
+.env.local
+.env.*.local
+commerce/.env.local
+commerce/data/
+commerce/private/
+release/*.private.*
+*.windilicense
+supabase/.temp/
+
+# Local prepared music and cloud staging packages
+assets/music/prepared/
+assets/music/library-catalog.json
+.release-assets/
+
+# Read-only upstream references (licensed adaptations live in native/PageTurn)
+.references/
+
+# Owner-provided welcome recording stays local until explicit release authorization.
+assets/welcome/welcome.wav
+/android/qa/selected-203-page.pdf
+
+# Editor and operating-system metadata
+.idea/
+.vscode/
+**/.DS_Store
+
+# Regenerable build output and local dependency trees
+**/build/
+**/.gradle/
+**/node_modules/
+**/__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+landing-page/dist/
+
+# Local Android QA captures and generated test reports; keep test scripts/source
+android/qa/*.png
+android/qa/*.wav
+android/qa/*.json
+android/qa/*.log
+android/qa/*.txt
+android/qa/*.pdf
+android/qa/*.jar
+android/qa/*.dylib
+
+# Local recordings and voice-reference material are not source code or release assets
+/*.MP3
+/*.mp3
+/ref voice/
+
+# Private training datasets and generated voice packages
+training/f5/logs/
+training/f5/EXECUTION_STATUS.json
+training/f5/OVERNIGHT_SUMMARY.json
+training/piper/artifacts/
+training/piper/data/
+training/piper/runs/
+training/piper/checkpoints/
+training/piper/SETUP_STATUS.json
+
+# Local signing material and deployment credentials
+*.keystore
+*.jks
+*.p12
+*.mobileprovision
+*.pem
+**/.env
+**/.env.*
+!**/.env.example
+!**/.env.*.example
+
+# Build tools, generated C/C++ output, local signing and machine settings
+**/.cxx/
+/android/.tooling/
+/android/local.properties
+*.log
+*.apk
+*.aab
+*.dmg
+*.pkg
+*.zip
+
+# Generated reports and marketing exports
+/graphify-out/
+/landing-page/qa/
+/media-kit/
+
+# Local recordings, music, generated voice previews and private demo material
+/assets/music/
+/assets/voice-previews/
+/assets/welcome/
+/landing-page/assets/audio/*.mp3
+/android/app/src/main/assets/music/
+/android/app/src/main/assets/welcome/

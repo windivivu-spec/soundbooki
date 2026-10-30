@@ -1,0 +1,10 @@
+'use strict';
+let profileToken='',profileTrigger=null;
+$('openProfile').onclick=()=>{if(document.querySelector('dialog[open]'))return;profileTrigger=document.activeElement;profileToken=requestToken();$('profileDialog').showModal();send({action:'profileInfo',token:profileToken});};
+$('closeProfile').onclick=()=>$('profileDialog').close();
+$('profileDialog').addEventListener('close',()=>{profileToken='';profileTrigger?.focus?.();});
+$('saveProfile').onclick=()=>send({action:'profileSave',token:profileToken,name:$('profileName').value});
+$('profileTrial').onclick=()=>{if(!book){toast('Mở một cuốn sách từ thư viện trước khi tạo thử Pro.');return;}$('profileDialog').close();openBookCloud({mode:'trial',chapterId:activeSection()?.id});};
+$('profileCombo').onclick=()=>{$('profileDialog').close();openLaunchOffer();};
+const receiveBeforeProfile=window.receive;
+window.receive=e=>{if(e.event==='profileInfo'){if(e.token!==profileToken||!$('profileDialog').open)return;$('profileName').value=e.name;$('profileDevice').textContent='Mã Mac · '+e.deviceCode;$('profileQuota').textContent=e.cached?'Còn '+e.trialsRemaining+'/'+e.trialLimit+' lượt (đã lưu)':'5 lượt · Chưa kiểm tra trên máy chủ';$('profileState').textContent=e.configured?'Số lượt trên máy chỉ để tham khảo. Máy chủ xác nhận khi nhận yêu cầu.':'Pro Cloud chưa mở. Hồ sơ local và Lite vẫn dùng được.';return;}receiveBeforeProfile(e);};

@@ -1,0 +1,13 @@
+{
+  "channel": "consumer",
+  "licenseMode": "device",
+  "licensePublicKey": "upviPkOPSvGhvo5vHL5K/7pj+Zg6sIjipXvvKszeSts=",
+  "checkoutURL": "https://img.vietqr.io/image/TPB-55111685555-compact2.png?amount=189000&addInfo=&accountName=BUI+QUOC+HUNG",
+  "checkoutMode": "qr",
+  "licenseBaseURL": "https://zpjphixcttehkkgxlmsn.supabase.co/functions/v1/wsn-license/",
+  "priceVND": 189000,
+  "period": "year",
+  "privateVoiceAvailable": true,
+  "booksBaseURL": "https://zpjphixcttehkkgxlmsn.supabase.co/functions/v1/wsn-books",
+  "heygenDispatchOnly": true
+}

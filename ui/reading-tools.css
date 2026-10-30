@@ -1,0 +1,18 @@
+.reading-tools-dialog.glass{position:fixed;inset:0;margin:auto;width:min(620px,calc(100vw - 64px));max-height:calc(100dvh - 80px);overflow:auto;padding:28px;border:1px solid var(--line);border-radius:22px;background:var(--sheet);color:var(--ink);backdrop-filter:none;-webkit-backdrop-filter:none;box-shadow:0 24px 80px var(--shadow);font-size:14px;line-height:1.6}
+.reading-tools-dialog::backdrop{background:#0d1623a6}
+.reading-tools-dialog h2{font-size:23px;line-height:1.25;margin:0 64px 22px 0}
+.reading-tools-dialog .reading-tools-close{position:absolute;right:20px;top:20px;font-size:13px;color:var(--muted)}
+.reading-tools-dialog textarea,.reading-tools-dialog input{box-sizing:border-box;width:100%;font:inherit;margin:8px 0;padding:12px;border:1px solid var(--line);border-radius:10px;background:var(--canvas);color:var(--ink)}
+.reading-tools-dialog textarea{min-height:140px;resize:vertical}
+.reading-tools-dialog select{padding:9px;border:1px solid var(--line);border-radius:8px;color:var(--ink);background:var(--canvas);margin-right:12px}
+.reading-tools-dialog blockquote{margin:12px 0;padding:14px;border-left:3px solid var(--accent);max-height:160px;overflow:auto;background:var(--active);white-space:pre-wrap}
+.reading-tools-results{display:grid;gap:12px;margin-top:18px}
+.reading-tools-results>article{padding:16px;border:1px solid var(--line);border-radius:12px;white-space:pre-wrap;overflow-wrap:anywhere;background:var(--canvas)}
+.reading-tools-results p{margin:0 0 10px}.reading-tools-results button{margin:4px 8px 0 0;font-size:12px;border:1px solid var(--line)}
+.reading-tools-actions{display:flex;gap:4px;flex-wrap:wrap;padding:0 24px 8px;flex-shrink:0}.reading-tools-actions button{font-size:12px;min-height:36px;color:var(--muted)}
+#ebookFlow [data-cue]::highlight(note-yellow){background:#f4d96e;color:#20252d}#ebookFlow [data-cue]::highlight(note-green){background:#a8dab4;color:#20252d}#ebookFlow [data-cue]::highlight(note-blue){background:#acd4ef;color:#20252d}#ebookFlow [data-cue]::highlight(note-pink){background:#f2bed6;color:#20252d}
+@media(prefers-contrast:more){.reading-tools-dialog,.reading-tools-results>article{border-color:var(--ink)}}
+/* Reading tools use a solid sheet so source text never bleeds through the dialog. */
+.reading-tools-dialog.glass{background:#f7f9fc}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]) .reading-tools-dialog.glass{background:#202a39}}
+[data-theme=dark] .reading-tools-dialog.glass{background:#202a39}

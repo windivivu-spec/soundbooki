@@ -1,0 +1,21 @@
+{
+  "name": "@windi/qr-payment",
+  "version": "1.0.0",
+  "description": "Portable VietQR and SePay payment orders, webhook settlement and status API",
+  "type": "module",
+  "engines": { "node": ">=22.13.0" },
+  "exports": {
+    ".": { "types": "./src/index.d.ts", "import": "./src/index.js" },
+    "./sepay": { "types": "./src/sepay.d.ts", "import": "./src/sepay.js" },
+    "./node": { "types": "./src/node.d.ts", "import": "./src/node.js" }
+  },
+  "bin": { "windi-qr-payment": "./src/cli.js" },
+  "files": ["src", "test", "examples", "README.md", "env.example", "Dockerfile"],
+  "scripts": {
+    "start": "node --env-file-if-exists=.env src/cli.js",
+    "test": "node --test test/*.test.js",
+    "pack:release": "npm pack --pack-destination ../../artifacts/qr-payment"
+  },
+  "dependencies": { "pg": "^8.16.3" },
+  "bundleDependencies": ["pg"]
+}

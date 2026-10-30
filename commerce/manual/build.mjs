@@ -1,0 +1,13 @@
+import { copyFile, mkdir, writeFile } from 'node:fs/promises';
+import { resolve } from 'node:path';
+import { fileURLToPath } from 'node:url';
+import { createQrUrl } from '../../package qr pay/src/index.js';
+const here=fileURLToPath(new URL('.',import.meta.url));
+const output=resolve(process.argv[2]||'dist/qr-checkout');
+const bank={bank:'TPB',account:'55111685555',name:'BUI QUOC HUNG'};
+await mkdir(output,{recursive:true});
+for(const name of ['index.html','manual.js'])await copyFile(resolve(here,'public',name),resolve(output,name));
+await copyFile(resolve(here,'../public/checkout.css'),resolve(output,'checkout.css'));
+await mkdir(resolve(output,'licenses'),{recursive:true});
+await writeFile(resolve(output,'config.json'),JSON.stringify({product:'windi-sach-noi-pro',amount:189000,bank,qrUrl:createQrUrl(bank,189000,''),salesReady:process.env.WSN_MANUAL_SALES_ENABLED==='true'},null,2));
+process.stdout.write(`Static QR checkout: ${output}\nNo server, secrets, webhook or customer data included.\n`);

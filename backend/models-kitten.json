@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "model": "KittenTTS Mini 80M",
+  "sdk": "project-local ONNX adapter v1",
+  "revision": "c02725660cea441db4c383af69f1f26f5cd00947",
+  "files": [
+    {
+      "repo": "KittenML/kitten-tts-mini-0.8",
+      "revision": "c02725660cea441db4c383af69f1f26f5cd00947",
+      "file": "kitten_tts_mini_v0_8.onnx",
+      "url": "https://huggingface.co/KittenML/kitten-tts-mini-0.8/resolve/c02725660cea441db4c383af69f1f26f5cd00947/kitten_tts_mini_v0_8.onnx",
+      "size": 78268016,
+      "sha256": "0f5bbae4fc4800c98dbc544a87ecfa79510de2fb8222db30d12e5bfe9177df91"
+    },
+    {
+      "repo": "KittenML/kitten-tts-mini-0.8",
+      "revision": "c02725660cea441db4c383af69f1f26f5cd00947",
+      "file": "voices.npz",
+      "url": "https://huggingface.co/KittenML/kitten-tts-mini-0.8/resolve/c02725660cea441db4c383af69f1f26f5cd00947/voices.npz",
+      "size": 3278902,
+      "sha256": "40ad2638952b77b7b2f30127e2608e169fc69dd256b53bd8aaa3409a33193c42"
+    },
+    {
+      "repo": "KittenML/kitten-tts-mini-0.8",
+      "revision": "c02725660cea441db4c383af69f1f26f5cd00947",
+      "file": "config.json",
+      "url": "https://huggingface.co/KittenML/kitten-tts-mini-0.8/resolve/c02725660cea441db4c383af69f1f26f5cd00947/config.json",
+      "size": 470,
+      "sha256": "6b160bc9b19e24ecb21e84bc14f8a7da21fdf47ec72d42450bc5cf514b61804a"
+    }
+  ]
+}

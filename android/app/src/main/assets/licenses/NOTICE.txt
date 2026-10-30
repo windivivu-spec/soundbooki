@@ -1,0 +1,8 @@
+VieNeu-TTS v3 Nano and SEA-G2P © Phạm Nguyễn Ngọc Bảo.
+Model: https://huggingface.co/pnnbao-ump/VieNeu-TTS-v3-Nano
+SEA-G2P: https://github.com/pnnbao97/sea-g2p
+ONNX Runtime © Microsoft, MIT.
+PDFBox Android © Tom Roush and Apache Software Foundation, Apache-2.0.
+jsoup © Jonathan Hedley, MIT.
+ZXing © ZXing authors, Apache-2.0.
+Public Nano presets only. No private F5 weights or recordings.

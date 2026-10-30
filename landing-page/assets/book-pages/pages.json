@@ -1,0 +1,30 @@
+{
+  "desktop": {
+    "left": [
+      "assets/book-pages/desktop-1-left.png",
+      "assets/book-pages/desktop-2-left.png",
+      "assets/book-pages/desktop-3-left.png",
+      "assets/book-pages/desktop-4-left.png",
+      "assets/book-pages/desktop-5-left.png",
+      "assets/book-pages/desktop-6-left.png"
+    ],
+    "right": [
+      "assets/book-pages/desktop-1-right.png",
+      "assets/book-pages/desktop-2-right.png",
+      "assets/book-pages/desktop-3-right.png",
+      "assets/book-pages/desktop-4-right.png",
+      "assets/book-pages/desktop-5-right.png",
+      "assets/book-pages/desktop-6-right.png"
+    ]
+  },
+  "mobile": {
+    "right": [
+      "assets/book-pages/mobile-1-right.png",
+      "assets/book-pages/mobile-2-right.png",
+      "assets/book-pages/mobile-3-right.png",
+      "assets/book-pages/mobile-4-right.png",
+      "assets/book-pages/mobile-5-right.png",
+      "assets/book-pages/mobile-6-right.png"
+    ]
+  }
+}

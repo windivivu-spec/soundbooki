@@ -1,0 +1,2 @@
+# CPU ONNX; no legacy/CUDA extras, no torch/video/translation engines.
+vieneu==3.8.1
